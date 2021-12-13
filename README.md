@@ -1,2 +1,2 @@
-# maxzainulin.github.io
+# Максим Зайнулин
 My first project
