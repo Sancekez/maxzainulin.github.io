@@ -1,0 +1,180 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+.logo{
+    color: #fff;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;
+    float: left;
+}
+.menu{
+    float: left;
+    padding-left: 432px;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.png) center/cover no-repeat;
+}
+.title_container{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+.title_container h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.title_container h4{
+    margin-top: 40px;
+    font-size: 22px;
+    color: #79818d;
+}
+.title_container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+}
+.info{
+    margin: 107px 447px 57px 447px;
+}
+.info h2{
+    text-align: center;
+    font-size: 34px;
+    color: #263244;
+    font-family: "Franklin Gothic";
+}
+.info img{
+    margin: 89px 410px 35px 410px;
+}
+.info h4{
+    margin-top: 44px;
+    font-size: 18px;
+    color: #3f495a;
+    font-family: "Calibri";
+}
+.info input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6f707e;
+    font-size: 17px;
+    margin: 36px 440px 99px 440px;
+}
+.myskills {
+    height: calc(100% - 60px);
+    background: url(../img/bgskills.png)center/cover no-repeat;
+}
+.myskills h2{
+    padding-top: 107px;
+    padding-bottom: 248px;
+    text-align: center;
+    font-size: 34px;
+    color: #263244;
+}
+.skill1 h3{
+    font-size: 19px;
+    color: #cf7600;
+    font-weight: bold;
+}
+.skill1 h4{
+    font-size: 17px;
+    color: #3f495a;
+}
+.skill2 h3{
+    font-size: 19px;
+    color: #cf7600;
+    font-weight: bold;
+}
+.skill2 h4{
+    font-size: 17px;
+    color: #3f495a;
+}
+.skill3 h3{
+    font-size: 19px;
+    color: #cf7600;
+    font-weight: bold;
+}
+.skill3 h4{
+    font-size: 17px;
+    color: #3f495a;
+}
+.skill4 h3{
+    font-size: 19px;
+    color: #cf7600;
+    font-weight: bold;
+}
+.skill4 h4{
+    font-size: 17px;
+    color: #3f495a;
+}
+.cases h3{
+    padding-top: 110px;
+    padding-bottom: 70px;
+    font-size: 33px;
+    color: #384354;
+    text-align: center;
+}
+.cases h4{
+    padding-bottom: 42px;
+    font-size: 17px;
+    color: #3f495a;
+    text-align: center;
+}
+.statistics {
+    background: url(../img/statistics.png) no-repeat;
+}
+.statistics h1{
+    text-align: center;
+    font-size: 33px;
+    padding-top: 147px;
+    padding-bottom: 205px;
+    color: #323e4f;
+}
+.statistics h2{
+        font-size: 38px;
+    color: #323e4f;
+    text-align: center;
+}
+.statistics h3{
+    color: #3f4b5b;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.comment h2{
+    padding-top: 107px;
+    padding-bottom: 97px;
+    font-size: 34px;
+    color: #243042;
+    text-align: center;
+}
+.comment img{
+    margin: 97px 410px 35px 410px;
+}
+.feedback {
+    background: url(../img/contac.png);
+}
