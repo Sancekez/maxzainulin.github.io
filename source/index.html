@@ -5,6 +5,24 @@
     <title>My first project ^_^</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--  <style>
+        .preloader {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;  
+        }
+        .preloader__loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+        </style>
+        -->
 </head>
 <body>
     <header>
@@ -12,23 +30,25 @@
         <div class="logo"> Максим Зайнулин </div>
         <div class="menu">
             <ul>
-            <li>Обо мне</li>
-            <li>Услуги</li>
-            <li>Кейсы</li>
-            <li>Прайс</li>
-            <li>Отзывы</li>
-            <li>Контакты</li>
+            <li></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Кейсы</a></li>
+            <li><a href="">Прайс</a></li>
+            <li><a href="">Отзывы</a></li>
+            <li><a href="">Контакты</a></li>
             </ul>
         </div>
     </nav>
     </header>
-    
-    <div class="main"><div class="title_container">
+    <main>
+    <section class="main">
+        <div class="title_container">
         <h1>Привет <br> Я Максим Зайнулин</h1>
         <h4>Фулл стек веб-разработчик</h4>
-        <input type="submit" value="Обо мне"> 
-        <input type="submit" value="Мои работы">
-    </div></div>
+        <input type="button" value="Обо мне"> 
+        <input type="button" value="Мои работы">
+        </div>
+    </section>
     
     <div class="info"><div class="aboutme">
         <h2>ОБО МНЕ</h2>
@@ -57,8 +77,8 @@
         </div>
     </div>
     <div class="cases">
-        <h3>КЕЙСЫ</h3>
-        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur tempora exercitationem saepe id accusantium ipsa porro dolorem odio possimus dolore facere ut distinctio ratione, officiis facilis ducimus deleniti repudiandae tempore!</h4>
+        <h2>КЕЙСЫ</h3>
+        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur tempora exercitationem saepe id accusantium ipsa porro dolorem odio possimus dolore facere ut distinctio ratione, officiis facilis ducimus deleniti repudiandae tempore!</h4>
         <img src="img/site.png" alt="">
         <div class="clientsite">
             <h4>CLIENT:</h4>
@@ -87,7 +107,7 @@
             <div class="price">Стоимость 0</div>
      </div>
      <div class="statistics">
-         <h1>Немного статистики</h2>
+         <h1>Немного статистики</h1>
          <h2>120</h2>
          <h3>счастливых клиентов</h3>
          <h2>4,600</h2>
@@ -104,15 +124,31 @@
         <h5>Михаил, Ген директор ПАО "Газпромика"</h5>
      </div>
      <div class="feedback">
-         <h1>Мои контакты</h1>
+         <h1>МОИ КОНТАКТЫ</h1>
          <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente assumenda id eius error exercitationem! Expedita cum at sint omnis fuga, vero explicabo quas, eum unde neque obcaecati illo corporis rerum?</h4>
         <h3>Оставьте мне сообщение</h3>
-        <input type="text" name="name" value="" placeholder="Введите ваше имя">
-        <input type="text" name="Email" value="" placeholder="Email"> <br>
+        <span class="messagename"><input type="text" name="name" value="" placeholder="Имя"> </span>
+        <span class="email"> <input type="email" name="Email" value="" placeholder="Email"> </span><br>
         <textarea name="message" id="" >Сообщение</textarea> <br>
-        <input type="submit" value="Отправить">
-
-
+        <div class="messagesubmit"><input type="submit" value="Отправить"></div>
      </div>
+    </main> 
+    <!-- 
+    <div class="preloader">
+        <div class="preloader__loader">
+            <img src="img/loader.gif" alt="" />
+        </div>
+    </div>   
+        <script>
+            jQuery(document).ready(function($) {
+                $(window).on('load', function () {
+                    var $preloader = $('.preloader'),
+                        $loader = $preloader.find('.preloader__loader');
+                    $loader.fadeOut();
+                    $preloader.delay().fadeOut();
+                });
+            });
+            </script>
+            --> 
 </body>
 </html>
