@@ -5,6 +5,7 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
 .logo{
     color: #fff;
@@ -12,6 +13,11 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    animation: comming 2s ease;
+}
+main{
+    width: 100%;
+    height: 100%;
 }
 .menu{
     float: left;
@@ -24,10 +30,12 @@ nav{
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.png) center/cover no-repeat;
 }
 .title_container{
@@ -35,6 +43,9 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    animation: titlemove 1s ease forwards;
+    animation-delay: 2.4s;
 }
 .title_container h1{
     font-size: 60px;
@@ -93,6 +104,10 @@ nav{
     text-align: center;
     font-size: 34px;
     color: #263244;
+}
+.skill1 {
+    max-width: 100px;
+    text-align: center;
 }
 .skill1 h3{
     font-size: 19px;
@@ -166,19 +181,26 @@ nav{
 .price {
     font-size: 21px;
     text-align: center;
+    padding-bottom: 155px;
+    padding-top: 15px;
 }
 .statistics {
+    height: 600px;
     background: url(../img/statistics.png) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .statistics h1{
     text-align: center;
     font-size: 33px;
     padding-top: 147px;
-    padding-bottom: 205px;
+    padding-bottom: 89px;
     color: #323e4f;
 }
 .statistics h2{
-        font-size: 38px;
+    font-size: 38px;
     color: #323e4f;
     text-align: center;
 }
@@ -257,4 +279,104 @@ nav{
     font-size: 17px;
     margin: 64px 896px 168px 896px;
     padding: 18px 18px 13px 18px;
+}
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: #eb8601;
+}
+.menu li a:active{
+    transform: scale(1.1);
+}
+.title_container input{
+    transition: all 0.2s;
+}
+.title_container input:hover{
+    background: #344051;
+    color: white;
+}
+.title_container input:active{
+    transform: scale(1.1);
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+.info input:hover{
+    background: #344051;
+    color: white;
+}
+.info input:active{
+    transform: scale(1.1);
+}
+.messagename input:hover{
+    background: #344051;
+    color: white;
+    transform: scale(1.1);
+}
+.email input:hover{
+    background: #344051;
+    color: white;
+    transform: scale(1.1);
+}
+.feedback textarea:hover{
+    background: #344051;
+    color: white;
+    transform: scale(1.1);
+}
+.messagesubmit input:hover{
+    background: #343f50;
+    color: white;
+}
+.messagesubmit input:active{
+    transform: scale(1.1);
+}
+.comment img:hover{
+    transform: scale(1.5,1.5);
 }
